@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>My StudyLife 2024 | eBooks</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+		<style>	
+			* 
+			{
+				box-sizing: border-box;
+			}
+			body 
+			{
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 0 20px;
+			}
+			ul
+			{
+				margin:0;
+				padding:0;
+			}	
+			ul li
+			{
+				list-style-type:none;
+				margin-top:10px;
+			}
+			.videoCell
+			{
+				border: 2px solid #dedede;
+				background-color: #fefff0;
+				border-radius: 20px;
+				padding: 10px;
+				margin: 10px 0;
+			}
+			.videoCell::after 
+			{
+				content: "";
+				clear: both;
+				display: table;
+			}
+			.videoCellThumbnail
+			{
+				width: 10%;
+				height:auto;
+			}
+			.videoCellThumbnail embed
+			{
+				float: left;
+				width: 130px;
+				height: 130px;
+				margin-right: 20px;
+				border-radius:20px;
+			}
+			.videoOptions
+			{
+				float: right;
+				height:25px;
+				width:25px;
+				margin:10px;
+				cursor:hand;
+			}
+			.navigation
+			{
+				position:relative;
+				display: flex;
+				align-items:center;
+				margin-top: 20px;
+			}
+			.navigation img
+			{
+				height:15px;
+				width:15px;
+				top:50%;
+				vertical-align:middle;
+				margin-right:10px;
+			}
+			.navigation a
+			{
+				top:50%;
+				margin-right:10px;
+				text-decoration:none;
+				color:black;
+			}
+			.pageTitle
+			{
+				text-align:center;
+				font-size:36px;
+				font-family: 'Anton', sans-serif;
+				letter-spacing:3px;
+			}
+		</style>
+		<script>
+			function pdfViewer(filePath)
+			{
+				var anchor=document.createElement('a');
+				//anchor.setAttribute('href','C:/Users/DELL/Desktop/Project/img/video.mp4');
+				anchor.setAttribute('href',filePath);//'E:\sample.pdf'
+				anchor.setAttribute('download',filePath);
+				document.body.appendChild(anchor);
+				anchor.click();
+				anchor.parentNode.removeChild(anchor);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="navigation">
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/navigation%20bar.html">Home</a>
+			<img src="img/left.png">
+			<a href="#">eBook</a>
+		</div>
+		<p class="pageTitle">EBOOK</p>
+		<ul>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiologistbook1.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">Cardiology Guidelines</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">This guideline is intended to assist staff in the management of the common cardiac conditions likely to be encountered in an acute hospital setting.</p>
+					<a href="EBOOK_VIEW.html?eBookid=1"><img class="videoOptions" src="img/view.png"></img></a>
+					<img onclick="pdfViewer('raw/cardiologistbook1.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+				 
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiologistbook2.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">Prevention of Cardiovascular Disease</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">Guidelines for assessment and management of cardiovascular risk</p>
+					<a href="EBOOK_VIEW.html?eBookid=2"><img class="videoOptions" src="img/view.png"></img></a>
+					<img onclick="pdfViewer('raw/cardiologistbook2.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiologistbook3.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">Prevention and Management of Stroke</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases & Stroke (NPCDCS)</p>
+					<a href="EBOOK_VIEW.html?eBookid=3"><img class="videoOptions" src="img/view.png"></img></a>
+					<img onclick="pdfViewer('raw/cardiologistbook3.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiologistbook4.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">The Healthy Heart Handbook for Women</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">Directorate General of Health Services, Ministry of Health and Family Welfare, Government of India, 2019</p>
+					<a href="EBOOK_VIEW.html?eBookid=4"><img class="videoOptions" src="img/view.png"></img></a>
+					<img onclick="pdfViewer('raw/cardiologistbook4.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiologistbook5.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">YOUR GUIDE TO A Healthy Heart</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">This video is on Java object-oriented programming Concepts. This Object-Oriented Programming Java video will help you understand the fundamentals of OOPS in Java with practical examples for a better learning experience and job placement. </p>
+					<a href="EBOOK_VIEW.html?eBookid=5"><img class="videoOptions" src="img/view.png"></img></a>
+					<img onclick="pdfViewer('raw/cardiologistbook5.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>

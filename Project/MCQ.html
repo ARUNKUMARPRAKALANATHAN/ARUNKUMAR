@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>My StudyLife 2024 | MCQ</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+		<style>	
+			* 
+			{
+				box-sizing: border-box;
+			}
+			body 
+			{
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 0 20px;
+			}
+			ul
+			{
+				margin:0;
+				padding:0;
+			}	
+			ul li
+			{
+				list-style-type:none;
+				margin-top:10px;
+			}
+			.videoCell
+			{
+				border: 2px solid #dedede;
+				background-color: #fefff0;
+				border-radius: 20px;
+				padding: 10px;
+				margin: 10px 0;
+			}
+			.videoCell::after 
+			{
+				content: "";
+				clear: both;
+				display: table;
+			}
+			.videoCellThumbnail
+			{
+				width: 10%;
+				height:auto;
+			}
+			.videoCellThumbnail embed
+			{
+				float: left;
+				width: 130px;
+				height: 130px;
+				margin-right: 20px;
+				border-radius:20px;
+			}
+			.videoOptions
+			{
+				float: right;
+				height:25px;
+				width:25px;
+				margin:10px;
+				cursor:hand;
+			}
+			.navigation
+			{
+				position:relative;
+				display: flex;
+				align-items:center;
+				margin-top: 20px;
+			}
+			.navigation img
+			{
+				height:15px;
+				width:15px;
+				top:50%;
+				vertical-align:middle;
+				margin-right:10px;
+			}
+			.navigation a
+			{
+				top:50%;
+				margin-right:10px;
+				text-decoration:none;
+				color:black;
+			}
+			.pageTitle
+			{
+				text-align:center;
+				font-size:36px;
+				font-family: 'Anton', sans-serif;
+				letter-spacing:3px;
+			}
+		</style>
+		<script>
+			function pdfViewer(filePath)
+			{
+				var anchor=document.createElement('a');
+				//anchor.setAttribute('href','C:/Users/DELL/Desktop/Project/img/video.mp4');
+				anchor.setAttribute('href',filePath);//'E:\sample.pdf'
+				anchor.setAttribute('download',filePath);
+				document.body.appendChild(anchor);
+				anchor.click();
+				anchor.parentNode.removeChild(anchor);
+			}
+		</script>	
+	</head>
+	<body>
+		<div class="navigation">
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/navigation%20bar.html">Home</a>
+			<img src="img/left.png">
+			<a href="#">MCQ</a>
+		</div>
+		<p class="pageTitle">MCQ</p>
+		<ul>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiothoracicmcq1.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">MCQs for the Cardiology Knowledge based assessment</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">Daniel Augustine | Paul Leeson | Ali Khavandi</p>
+					<a href="MCQ_VIEW.html?mcqid=1"><img class="videoOptions" src="img/view.png"></a>
+					<img onclick="pdfViewer('raw/cardiothoracicmcq1.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+				 
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiothoracicmcq2.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">CARDIOLOGY MCQs</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">John Publications</p>
+					<a href="MCQ_VIEW.html?mcqid=2"><img class="videoOptions" src="img/view.png"></a>
+					<img onclick="pdfViewer('raw/cardiothoracicmcq2.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+			<li>
+				<div class="videoCell">
+					<div class="videoCellThumbnail">
+						<embed name="plugin" src="raw/cardiothoracicmcq3.pdf" type="application/pdf"></embed>
+					</div>
+					<p style="font-family: 'Lato', sans-serif;font-weight:600;">MCQ on Cardiology</p>
+					<p style="white-space: nowrap;overflow: hidden;font-family: 'Lato', sans-serif;text-overflow: ellipsis;">GK Series</p>
+					<a href="MCQ_VIEW.html?mcqid=3"><img class="videoOptions" src="img/view.png"></a>
+					<img onclick="pdfViewer('raw/cardiothoracicmcq3.pdf')" class="videoOptions" src="img/download.png"></img>
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>My StudyLife 2024 | EBOOK</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+		<style>	
+			* 
+			{
+				box-sizing: border-box;
+			}
+			body 
+			{
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 0 20px;
+			}
+			.videoView
+			{
+				align-items:center;
+			}
+			.navigation
+			{
+				position:relative;
+				display: flex;
+				align-items:center;
+				margin-top: 20px;
+			}
+			.navigation img
+			{
+				height:15px;
+				width:15px;
+				top:50%;
+				vertical-align:middle;
+				margin-right:10px;
+			}
+			.navigation a
+			{
+				top:50%;
+				margin-right:10px;
+				text-decoration:none;
+				color:black;
+			}
+			.pageTitle
+			{
+				text-align:center;
+				font-size:36px;
+				font-family: 'Anton', sans-serif;
+				letter-spacing:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navigation">
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/navigation%20bar.html">Home</a>
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/EBOOK.html">eBook</a>
+			<img src="img/left.png">
+			<a id="eBookNavBarLabel" href="#"></a>
+		</div>
+		<p id="eBookTitle" class="pageTitle"></p>
+		
+		<embed width="800px" height="500px" name="plugin" id="eBookEmbedSrc" type="application/pdf"></embed>
+		
+		<script>
+			const queryString = window.location.search;
+			console.log(queryString);
+			const urlParams = new URLSearchParams(queryString);
+			const id = urlParams.get('eBookid')
+			if(id==1)
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='Cardiology Guidelines';
+				document.getElementById("eBookTitle").innerHTML='Cardiology Guidelines';
+				document.getElementById("eBookEmbedSrc").src='raw/cardiologistbook1.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==2)
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='Prevention of Cardiovascular Disease';
+				document.getElementById("eBookTitle").innerHTML='Prevention of Cardiovascular Disease';
+				document.getElementById("eBookEmbedSrc").src='raw/cardiologistbook2.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==3)
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='Prevention and Management of Stroke';
+				document.getElementById("eBookTitle").innerHTML='Prevention and Management of Stroke';
+				document.getElementById("eBookEmbedSrc").src='raw/cardiologistbook3.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==4)
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='The Healthy Heart Handbook for Women';
+				document.getElementById("eBookTitle").innerHTML='The Healthy Heart Handbook for Women';
+				document.getElementById("eBookEmbedSrc").src='raw/cardiologistbook4.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==5)
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='YOUR GUIDE TO A Healthy Heart';
+				document.getElementById("eBookTitle").innerHTML='YOUR GUIDE TO A Healthy Heart';
+				document.getElementById("eBookEmbedSrc").src='raw/cardiologistbook5.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else
+			{
+				document.getElementById("eBookNavBarLabel").innerHTML='File Not Found!';
+				document.getElementById("eBookTitle").innerHTML='File Not Found!';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My StudyLife 2024</title>
+  <script src="https://kit.fontawesome.com/06e92a832f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style1.css">
+  <script>
+	function login()
+	{
+		var username = document.getElementById("Email").value;
+		var password = document.getElementById("Password").value;
+		window.location.href="file:///C:/Users/DELL/Desktop/Project/navigation%20bar.html";
+		//alert(username+" "+password);
+		/*if(isEmptyOrSpaces(username) || isEmptyOrSpaces(password))
+		{
+			
+		}*/
+		return false;
+	}	
+  </script>
+</head>
+<body>
+  <div class="bgStyle">
+      <p>
+        <h1>Login</h1>
+      </p>
+      <form>
+        <div>
+          <table>
+            <tr>
+              <td><div class="inputTextStyle">
+                <input type="text" id="Email" placeholder="Username" required>
+              </div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inputTextStyle">
+                  <input type="text" id="Password" placeholder="Password" required>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div> 
+          <button onclick="return login()">Login</button>
+        </div>
+        <div></div>
+        <table>
+          <tr>
+            <td><a class="sign" href="Register.html">New user</a>
+            <td><a class="sign" href="resetpg.html">Forget Password?</td>
+          </tr>
+        </table>
+        <div class="loginButtonStyle">
+		  <a href="https://www.facebook.com/login/" style="text-decoration:none">
+		   <i class="fa-brands fa-facebook-f" style="margin-top:5px;"></i>
+          login with Facebook
+		  </a>
+        </div>
+		
+		 <div class="loginButtonStyle">
+		  <a href="https://www.linkedin.com/login" style="text-decoration:none">
+		   <i class="fa-brands fa-linkedin-in" style="margin-top:5px;"></i>
+          login with Linkedin
+		  </a>
+        </div>
+		
+		 <div class="loginButtonStyle">
+		  <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp2unnbmWjSBMGQmV5zZTsjXeMAkDA8DF2UtNCZ61nHX8DGECE94O0bCptkAsdtDNZaBpRLksw&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1930032673%3A1703050853505626&theme=glif/"style="text-decoration:none">
+		   <i class="fa-brands fa-google" style="margin-top:5px;"></i>
+          login with Google
+		  </a>
+        </div>
+ </form>
+  </div>
+</body>
+</html>
+

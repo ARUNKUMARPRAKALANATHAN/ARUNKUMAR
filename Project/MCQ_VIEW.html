@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>My StudyLife 2024 | MCQ</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+		<style>	
+			* 
+			{
+				box-sizing: border-box;
+			}
+			body 
+			{
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 0 20px;
+			}
+			.videoView
+			{
+				align-items:center;
+			}
+			.navigation
+			{
+				position:relative;
+				display: flex;
+				align-items:center;
+				margin-top: 20px;
+			}
+			.navigation img
+			{
+				height:15px;
+				width:15px;
+				top:50%;
+				vertical-align:middle;
+				margin-right:10px;
+			}
+			.navigation a
+			{
+				top:50%;
+				margin-right:10px;
+				text-decoration:none;
+				color:black;
+			}
+			.pageTitle
+			{
+				text-align:center;
+				font-size:36px;
+				font-family: 'Anton', sans-serif;
+				letter-spacing:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navigation">
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/navigation%20bar.html">Home</a>
+			<img src="img/left.png">
+			<a href="file:///C:/Users/DELL/Desktop/Project/MCQ.html">MCQ</a>
+			<img src="img/left.png">
+			<a id="mcqNavBarLabel" href="#"></a>
+		</div>
+		
+		<p id="mcqTitle" class="pageTitle"></p>
+		
+		<embed width="800px" height="500px" name="plugin" id="mcqEmbedSrc" type="application/pdf"></embed>
+		
+		<script>
+			const queryString = window.location.search;
+			console.log(queryString);
+			const urlParams = new URLSearchParams(queryString);
+			const id = urlParams.get('mcqid')
+			if(id==1)
+			{
+				document.getElementById("mcqNavBarLabel").innerHTML='MCQs for the Cardiology Knowledge based assessment';
+				document.getElementById("mcqTitle").innerHTML='MCQs for the Cardiology Knowledge based assessment';
+				document.getElementById("mcqEmbedSrc").src='raw/cardiothoracicmcq1.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==2)
+			{
+				document.getElementById("mcqNavBarLabel").innerHTML='CARDIOLOGY MCQs';
+				document.getElementById("mcqTitle").innerHTML='CARDIOLOGY MCQs';
+				document.getElementById("mcqEmbedSrc").src='raw/cardiothoracicmcq2.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else if(id==3)
+			{
+				document.getElementById("mcqNavBarLabel").innerHTML='MCQ on Cardiology';
+				document.getElementById("mcqTitle").innerHTML='MCQ on Cardiology';
+				document.getElementById("mcqEmbedSrc").src='raw/cardiothoracicmcq3.pdf#toolbar=0&navpanes=0&scrollbar=0';
+			}
+			else
+			{
+				document.getElementById("mcqNavBarLabel").innerHTML='File Not Found!';
+				document.getElementById("mcqTitle").innerHTML='File Not Found!';
+			}
+		</script>
+	</body>
+</html>
